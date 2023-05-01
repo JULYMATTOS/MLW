@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="#" method="post">
+
+        <!--name é a variavel que dou para aquele nome
+        comando input é tipo uma caixa de texo que se add caracteres-->
+        <!--o for direciona o input no qual ele é direcionao. no caso aí,
+        ao clicar na palavra "nome", já vai direto para a caixa de preencher o nome-->
+        <!--comando div é para dividir e jogar para a linha de baixo-->
+        <!--input não fecha a tag-->
+        <fieldset>
+        <legend>Dados de login</legend>
+        <div>
+        <label for="Nome">Nome do usuário</label>
+        <input type="text" name="nome" id="nome" placeholder="digite seu nome"
+        size="20" maxlength="10" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="emailnome" size="20" value="Jiullian.mattos@ifsp" readonly>
+<!--readonly esse comando indica que aquilo é apenas para leitura. sem modificação-->
+        </div>
+        <div>
+        <label for="Senha">Senha</label>
+        <input type="password" name="Senha" id="Senha" placeholder="digite sua senha"
+        size="20" mixlength="8">
+        </div>
+        </fieldset>
+        <fieldset>
+
+            <legend>Dados funcionais</legend>
+        <div>
+        <label>Profissão</label><br>
+        <input type="radio" name="prof" id="professor">
+        <label>Professor</label>
+        <input type="radio" name="prof" id="estudante">
+        <label>estudante</label>
+        <input type="radio" name="prof" id="outros">
+        <label>outros</label>
+        </div>
+
+        <div>
+            <label>Qual tecnologia domina:</label><br>
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="js" id="js">
+            <label for="js">JavaScript</label>
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label>
+        </div>
+        <div>
+            <label for="recado">deixe seu recado</label><br>
+            <textarea name="recado" id="recado" cols="30" rows="10" placeholder="deixe seu recado"></textarea>
+        </div>
+        <div>
+            <label for="">Qual sua escolaridade?</label>
+            <select name="esc" id="esc">
+                <option value="1">Ensino fundamental I</option>
+                <option value="2">Ensino fundamental II</option>
+                <option value="3">Ensino médio</option>
+                <option value="4">Ensino Superior</option>
+                <option value="5">Pós Graduação</option>
+                <option value="6">Mestrado</option>
+                <option value="7">Doutorado</option>
+                <option value="8">Ensino técnico</option>
+                <option value="9" selected>outros</option>
+                <!--value é o valor atribuido-->
+            </select>
+        </div>
+        <div>
+            <label for="">Qual sua escolaridade?</label>
+            <select name="esc" id="esc">
+                <optgroup label="Opção 1"> 
+                <option value="1">Ensino fundamental I</option>
+                <option value="2">Ensino fundamental II</option>
+                <option value="3">Ensino médio</option>
+                </optgroup>
+                <optgroup label="Opção 2">
+                <option value="4">Ensino Superior</option>
+                <option value="5">Pós Graduação</option>
+                <option value="6">Mestrado</option>
+                <option value="7">Doutorado</option>
+                <option value="8">Ensino técnico</option>
+                <option value="9" selected>outros</option>
+                </optgroup>
+                <!--value é o valor atribuido-->
+                <!--<optgroup label=""> é para separa as opções de escolha-->
+            </select>
+            <div>
+                <label for="">Escolha uma cor</label>
+                <input type="color" name="cor" id="cor">
+                <br>
+                <label for="">Escolha uma Data</label>
+                <input type="date" name="dt" id="dt">
+                <label for="">Encontre um arquivo</label>
+                <input type="file" name="file" id="file">
+                <label for="">Encontre com um número</label>
+                <input type="number" name="num" id="num" max="100">
+            </div>
+        </div>
+        </fieldset>
+        <input type="submit" value="enviar">
+        <input type="reset" value="apagar">
+        <!--<button type="submit">enviar</button>
+            <button type="reset">apagar</button>-->
+            <!--button e input é a mesma coisa praticamente-->
+<!--fildset agrupa alguns elementos criando um bloco-->
+    </form>
+</body>
+</html>
+<!--com o comando CTRL+N da para abrir uma página nova no git sem esforço nenhum. valeu lucas-->
